@@ -44,7 +44,7 @@ const UserInfo = ({ userId, postcode, onSuccess }) => {
     <div className="wrapper">
       <div className="container">
         <h3>It looks like you already have an account, is your postcode {postcode}?</h3>
-        <p>If you would like to request another catalogue, please click the button below. If you would like to update your address, <a target="_blank" rel="noopener noreferrer" href="https://blomsbulbs.com/my-account/">please sign in to your account</a>, give us a call on <strong>01234 709099</strong>, or send an email to <a href="mailto:help@blomsbulbs.com">help@blomsbulbs.com</a>.</p>
+        <p>If you would like to request a catalogue, please click the button below and we will send one by return. If you would like to update your address, <a target="_blank" rel="noopener noreferrer" href="https://blomsbulbs.com/my-account/">please sign in to your account</a>, give us a call on <strong>01234 709099</strong>, or, send an email to <a href="mailto:help@blomsbulbs.com">help@blomsbulbs.com</a>.</p>
         <button onClick={handleRequestCatalogue} disabled={isLoading}>
           {isLoading ? "LOADING..." : "REQUEST A NEW CATALOGUE"}
         </button>

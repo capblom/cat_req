@@ -83,7 +83,7 @@ const NewUserForm = ({ email, onSuccess }) => {
           <input type="email" value={email} readOnly />
           <br /> <br />
 
-          <p>Please enter your details below and we will add you to our catalogue mailing list.</p>
+          <p>Please enter your details below and we will send your FREE copy of our Autumn  2023 Bulb Catalogue by return.</p>
 
           <label>Title: </label>
           <br />
@@ -137,8 +137,9 @@ const NewUserForm = ({ email, onSuccess }) => {
           <br />
           <select value={source} onChange={(e) => setSource(e.target.value)}>
             <option></option>
-            <option>English Garden</option>
+            <option>English Garden Magazine</option>
             <option>Social Media</option>
+            <option>Friend or Family</option>
             <option>Other</option>
           </select>
           <br /><br />
