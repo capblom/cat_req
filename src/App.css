@@ -6,14 +6,6 @@
 
 .logo-container {
   width: 100%;
-  position: fixed;
-  /* Fix the position */
-  top: 0;
-  /* Align to the top of the viewport */
-  left: 0;
-  /* Align to the left of the viewport */
-  z-index: 1000;
-  /* Ensures that the fixed item stays on top of other elements */
 }
 
 .logo {
@@ -24,7 +16,6 @@
 
 .wrapper {
   width: 80%;
-  margin-top: 160px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
