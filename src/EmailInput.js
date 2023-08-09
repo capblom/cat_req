@@ -26,7 +26,7 @@ const EmailInput = ({ checkEmail }) => {
     return (
         <div className="wrapper">
             <div className="container" id="ei-container">
-                <h2>REQUEST A CATaLOGUE</h2>
+                <h2>REQUEST A CATALOGUE</h2>
                 <p>To request your FREE copy of our Autumn 2023 Bulb Catalogue, please enter your email address below</p>
                 <form className="email-input-form" onSubmit={handleSubmit}>
                     <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
