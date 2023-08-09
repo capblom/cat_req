@@ -1,38 +1,129 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-container {
+  width: 100%;
+  position: fixed;
+  /* Fix the position */
+  top: 0;
+  /* Align to the top of the viewport */
+  left: 0;
+  /* Align to the left of the viewport */
+  z-index: 1000;
+  /* Ensures that the fixed item stays on top of other elements */
 }
 
-@keyframes App-logo-spin {
+.logo {
+  fill: #fff;
+  width: 300px;
+  margin: 20px
+}
+
+.wrapper {
+  width: 80%;
+  margin-top: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+  animation: fadeIn 0.6s ease forwards;
+
+  background-color: rgba(22, 44, 37, 0.5);
+  /* Background color with 70% opacity */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+
+}
+
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
+
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
+}
+
+
+a {
+  color: white;
+  /* Set the link color to white */
+  font-weight: bold;
+  text-decoration: underline;
+  /* Add underline */
+  transition: font-size 0.3s ease;
+  /* Transition effect for font-size */
+}
+
+a:hover {
+  font-size: 105%;
+  /* Increase the font size slightly on hover */
+}
+
+a:active {
+  /* Return to white with underline when clicked */
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+button {
+  height: 50px;
+  color: #fff;
+  background-color: #162c25;
+  border: none;
+
+  padding: 10px;
+  width: 250px;
+  transition: transform 0.3s ease;
+  /* Transition the transform property */
+}
+
+button:hover {
+  transform: scale(1.05);
+  /* Scale the button 5% larger when hovered */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="checkbox"]
+{
+  height: 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px;
+  width: 300px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease; /* Transition the border color */
+}
+
+select {
+  opacity: 0.8;
+  height: 20px;
+  width: 300px;
+  color: #000;
+  border: none;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover {
+  opacity: 1;
+}
+
+
+label {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
