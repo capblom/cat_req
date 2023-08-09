@@ -61,8 +61,7 @@ function App() {
   return (
     <div className="App">
       <div className="logo-container">
-        <a href="https://blomsbulbs.com/product-category/autumn/" target="_blank"><Logo />
-        </a>
+      <a href="https://blomsbulbs.com/product-category/autumn/" target="_blank" rel="noreferrer noopener">VISIT OUR ONLINE CATALOGUE</a>
       </div>
       {loading ? <Loading /> : null}
       {!userId && !loading && !showNewUserForm && !userCreated ? <EmailInput checkEmail={checkEmail} /> : null}
